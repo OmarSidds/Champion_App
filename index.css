@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #1B1924;
+    font-family: Josefin Sans, sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 390px;
+    height: 844px;
+    margin: -100px auto;
+}
+
+.freddie-publish, .endorsment-posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.freddiePic {
+    width: 90px;
+    height: 90px;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    width: 272px;
+}
+
+#textInput{
+    width: 317px;
+    height: 118px;
+    border-radius: 8px;
+    border: none;
+    background: #444059;
+}
+
+#textInput::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #8F8F8F;
+    font-size: 14px;
+}
+
+#publishBtn {
+    width: 321px;
+    height: 61px;
+    margin-top: 10px;
+    background: #28A9F1;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h2{
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 35px;
+}
+
+#textPost{
+    width: 317px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
