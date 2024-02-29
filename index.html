@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Champion</title>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
 </head>
 <body>
 
     <div class="container">
-        <div class="freddie-publish">
+
             <img src="./Freddie.png" alt="Picture of Freddie Mercury" class="freddiePic">
             <h1>We are the Champions</h1>
-            <input type="text" name="textInput" id="textInput" placeholder="Write your endorsment here">
-            <button type="button" id="publishBtn">Publish</button>
-        </div>
+            
+            <textarea name="textInput" id="endorsement-Input" cols="25" rows="5" placeholder="Write your endorsement here"></textarea>
+            <div id="fromAndTo">
+                <input type="text" id="fromInput" placeholder="From">
+                <input type="text" id="toInput" placeholder="To">
+            </div>
+            <button id="publishBtn">Publish</button>
 
-        <div class="endorsment-posts">
             <h2>- Endorsements -</h2>
-            <p id="textPost">Hi Bob! Your React Router course is so good. 
-                The students are going to LOVE IT. I’m so excited 
-                for the launch :) 🔥 Per
-            </p>
-        </div>
+            <ul id="endorsement-List"></ul>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

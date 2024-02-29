@@ -1,25 +1,21 @@
 body{
-    padding: 0;
+    padding: 20px;
     margin: 0;
     background: #1B1924;
     font-family: Josefin Sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
+    text-align: center;
+    max-width: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 390px;
-    height: 844px;
-    margin: -100px auto;
-}
-
-.freddie-publish, .endorsment-posts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .freddiePic {
@@ -30,27 +26,20 @@ body{
 h1{
     color: white;
     font-size: 25px;
-    width: 272px;
 }
 
-#textInput{
-    width: 317px;
+#endorsement-Input{
+    width: 310px;
     height: 118px;
     border-radius: 8px;
     border: none;
     background: #444059;
-}
-
-#textInput::placeholder{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #8F8F8F;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 10px;
 }
 
 #publishBtn {
-    width: 321px;
+    width: 330px;
     height: 61px;
     margin-top: 10px;
     background: #28A9F1;
@@ -60,20 +49,49 @@ h1{
     font-size: 22px;
 }
 
+#publishBtn:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#fromInput, #toInput{
+    width: 143px;
+    height: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    background: #444059;
+}
+
 h2{
     color: white;
     font-size: 20px;
     padding: 0;
-    margin-top: 35px;
+    margin-top: 30px;
+    margin-bottom: -10px;
 }
 
 #textPost{
-    width: 317px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    width: 314px;
+    height: 72%;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 3px 8px;
     background-color: white;
+    list-style-type: none;
     font-weight: 400;
     font-size: 14px;
 }
+
+#toAndFromInEndorsement, #TextInEndorsement{
+    text-align: left;
+}
+
+#toAndFromInEndorsement{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
