@@ -2,9 +2,13 @@
 
 Project takes in input in the form of endorsements/from/to, saves data in a firebase database and outputs a post containing all the information. 
 
+![image of we are the champions app](./championAppPic.png)
+
 
 ## Features
 
 - HTML and CSS provide structure and styling for the application.
 - JavaScript is used to take input, access firebase database, and modify the DOM.
-- Firebase database is used to save objects containing the values: From, To, Endorsement.  
+- Firebase database is used to save objects containing the values: From, To, Endorsement. 
+
+![image of database](./DatabaseSS.png)
